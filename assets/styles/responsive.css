@@ -1,0 +1,526 @@
+h1, h2, h3, h4{
+    color: white;
+}
+
+h1{
+    font: 4vw Arial, sans-serif;
+}
+
+h2{
+    font: 3.5vw Montserrat, sans-serif;
+    font-weight: bold;
+}
+
+h3{
+    font: 2vw Montserrat, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h4{
+    font: 2vw Montserrat, sans-serif;
+}
+
+p, label{
+    font: 1.5vw Arial, sans-serif;
+    color: grey;
+}
+
+a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo, .menu a, .categories a, .button a{
+    text-transform: uppercase;
+    
+}
+
+
+.nav_main{
+    background-color: #1F2324;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 10;
+    padding: 10px 30px;
+}
+
+.menu{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.menu>a{
+    color: grey;
+    font: 1vw Arial, sans-serif;
+    padding: 1% 3%;
+}
+
+.categories{
+    background-color: #DC4B58;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    padding: 10px 20px;
+}
+
+.categories>a{
+    color: white;
+    font: 1vw Arial, sans-serif;
+    font-weight: bold;
+    padding: 20px 20px;
+}
+
+.mobile{
+    z-index: 10;
+    display: none;
+}
+
+.nav_mobile{
+    background-color: #1F2324;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 70px;
+}
+
+.nav_mobile > form{
+    width: 70%;
+    text-align: center;
+}
+
+.search_bar{
+    width: 90%;
+}
+
+.menu_mobile {
+    background-color: #1F2324;
+    display: flex;
+    align-content: center;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#menu_checkbox{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    opacity: 0;
+}
+
+#menu_sandwich{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+#menu_arrow{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    background-color: #1F2324;
+}
+
+#menu_checkbox:checked + .sidebar{
+    display: initial;
+}
+
+#menu_label{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: 5;
+}
+
+
+#menu_text{
+    position: absolute;
+    left: 55px;
+    top: 15px;
+    font-size: 24px;
+}
+
+.sidebar{
+    display: none;
+}
+
+.menu_sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 400px;
+    background-color: #1F2324;
+    position: absolute;
+    top: 50px;
+    padding: 2% 5%;
+}
+
+.menu_sidebar > a{
+    font: 3vw Montserrat, sans-serif;
+    color: white;
+    padding: 5% 2%;
+}
+
+.carousel{
+    position: relative;
+    margin-top: 180px;
+}
+
+.carousel > img{
+    width: 100%;
+
+}
+
+.carousel_wrapper{
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    padding: 10px 30%;
+}
+
+.carousel_wrapper > *{
+    padding: 3% 0;
+}
+
+.carousel_wrapper > p{
+    font-size: 1.5vw;
+}
+
+.carousel_wrapper > a{
+    font-size: 1vw;
+}
+
+.carousel > .button{
+    padding: 6% 8%;
+}
+
+.button_wrapper{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.button_wrapper > a{
+    font-size: 10px;
+}
+
+.button{
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 2% 5%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin: 2% 2%;
+}
+
+.genres{
+    background-image: url("../images/background-pattern.jpg");
+    background-repeat: repeat;
+    padding: 20px 150px;
+}
+
+.genres > *{
+    margin: 50px auto;
+    text-align: center;
+}
+
+.genres_wrapper{
+    display: flex;
+    flex-flow: column wrap;
+    height: 300px;
+}
+
+.genres_wrapper>div{
+    display: flex;
+    align-items: center;
+}
+
+.genres_wrapper div > *{
+    margin: 5px 10px;
+}
+
+.genres > .button{
+    display: block;
+    width: 60px;
+}
+
+.suggestions{
+    background-color: #1F2324;
+    text-align: center;
+    padding: 2% 2%;
+}
+
+.suggestions > *{
+    margin: 2% 3%;
+    text-align: center;
+}
+
+.suggestions_wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 0 3%;
+}
+
+
+.suggestions_wrapper  h4, p{
+    font-size: 1vw;
+}
+
+.suggestions_wrapper  h4:hover{
+    color: #DC4B58;
+}
+
+.suggestions > .button{
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.popular_wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.popular_wrapper > h3{
+    border-top: 1px solid grey;
+    padding-top: 5%;
+}
+
+@media screen and (min-width: 600px){
+    .popular_wrapper, .popular_wrapper h3{
+        display: none;
+    }
+}
+
+.image_wrapper{
+    overflow: hidden;
+}
+.suggestions_wrapper  img:hover, .popular_wrapper  img:hover{
+    transform: scale(1.3);
+}
+
+.testimonials{
+    background-color: #DC4B58;
+    padding: 4% 10%;
+}
+
+
+.testimonials_wrapper{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.testimonials_wrapper > img{
+    height: 5%;
+    width: 5%;
+    margin: 5% 10%;
+}
+
+.left{
+    transform: rotate(180deg);
+}
+
+.testimonials_profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials_profile > img{
+    width: 50%;
+}
+
+.testimonials_profile > h4{
+    font-size: 1.5vw;
+}
+
+.testimonials_profile > *{
+    margin: 2% 0;
+}
+
+.contact_form_wrapper{
+    background-image: url("../images/background-pattern.jpg");
+    background-repeat: repeat;
+    height: 500px;
+    text-align: center;
+    padding: 3% 7%;
+}
+
+.contact_form_wrapper > .button{
+    display: block;
+    width: 10%;
+    margin: 5% auto;
+}
+
+.contact_form{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    text-align: initial;
+    overflow: hidden;
+}
+
+.input_wrapper{
+    padding: 50px 0;
+    position: relative;
+    margin: 1% 3%;
+}
+
+
+.input_wrapper > label{
+      position: absolute;
+      bottom: 5%;
+      transition: bottom 1s ease;
+}
+
+.input_wrapper > input{
+    position: absolute;
+    bottom: 0;
+}
+
+input:focus+label{
+    bottom: 50%;
+}
+
+.textarea{
+    grid-column: 1 / span 2;
+    margin-left: 1%;
+}
+
+.contact_form input[type=text], .contact_form input[type=textarea]{
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    background-color: transparent;
+}
+
+.contact_form input[type=text]{
+    width: 90%;
+}
+
+.contact_form input[type=textarea]{
+    width: 100%;
+}
+
+.map > img{
+    width: 100%;
+}
+
+footer{
+    background-color: #1F2324;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 960px){
+    .mobile{
+        display: initial;
+    }
+
+    .nav_main{
+        display: none;
+    }
+    .categories{
+        position: static;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .categories > a{
+        padding: 5px 5px;
+        font-size: 9px;
+    }
+
+    .carousel {
+        margin-top: 0;
+        z-index: -1;
+    }
+
+    .genres{
+        padding: 10px 50px;
+    }
+
+    .genres > p{
+        font-size: 2vw;
+    }
+
+    .genres > h3{
+        font-size: 2.5vw;
+    }
+
+    .genres > a{
+        font-size: 2vw;
+    }
+
+    .suggestions_wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .suggestions_wrapper > h4 p{
+        font-size: 2vw;
+    }
+
+    .suggestions > h3{
+        font-size: 3vw;
+    }
+
+    .suggestions > a{
+        font-size: 2vw;
+    }
+
+    .image_wrapper > img{
+        width: 100px;
+    }
+    .textarea{
+            grid-column: 1 / 1;
+     }
+
+     .contact_form_wrapper > h3{
+         font-size: 16px;
+     }
+
+     .contact_form_wrapper > a{
+        font-size: 9px;
+     }
+
+    .footer{
+        flex-direction: column;
+    }
+    .footer > p{
+        font-size: 16px;
+     }
+
+}
